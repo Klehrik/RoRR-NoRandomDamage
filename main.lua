@@ -1,9 +1,9 @@
--- No Random Damage v1.0.1
+-- No Random Damage v1.0.2
 -- Klehrik
 
 log.info("Successfully loaded ".._ENV["!guid"]..".")
 
-local damage_real = 0.0
+local damage_real = nil
 
 
 
@@ -18,5 +18,8 @@ gm.pre_script_hook(gm.constants.damage_inflict, function(self, other, result, ar
 end)
 
 gm.pre_script_hook(gm.constants.draw_damage, function(self, other, result, args)
-    args[3].value = damage_real
+    if damage_real then
+        args[3].value = damage_real
+        damage_real = nil
+    end
 end)
