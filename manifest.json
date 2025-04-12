@@ -1,9 +1,9 @@
 ﻿{
 	"name": "No_Random_Damage",
-	"version_number": "1.0.2",
+	"version_number": "1.0.3",
 	"website_url": "https://github.com/Klehrik/RoRR-NoRandomDamage",
 	"description": "Removes random damage number variance.",
 	"dependencies": [
-		"ReturnOfModding-ReturnOfModding-1.0.34"
+		"ReturnOfModding-ReturnOfModding-1.0.65"
 	]
 }
